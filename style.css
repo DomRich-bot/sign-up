@@ -33,11 +33,23 @@ body {
 
 .side2 input[type='text'],.side2 input[type='email'],
 .side2 input[type='tel'], .side2 input[type='password'] {
-    width: 350px;
+    width: 325px;
     height: 25px;
     border:2px solid rgb(234, 234, 236);
     border-radius: 5px;
     background-color: rgb(253, 253, 253);
+}
+
+input[type='text']:invalid,input[type='email']:invalid,
+input[type='tel']:invalid,input[type='password']:invalid {
+    border: 1px solid red;
+}
+
+input[type='text']:focus,input[type='email']:focus,
+input[type='tel']:focus,input[type='password']:focus {
+    border: 1px solid blue;
+    box-shadow: 2px 2px 4px grey;
+    outline: none;
 }
 
 label {
@@ -47,7 +59,7 @@ label {
 }
 
 .head {
-    background-color: rgb(245, 246, 248);
+    background-color: rgb(249, 249, 249);
     flex: .5;
     padding: 170px 40px 0px 6%;
     
@@ -57,7 +69,7 @@ form {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    flex: 1 0 200px;
+    flex: 1;
 }
 
 h3 {
@@ -68,17 +80,17 @@ h3 {
 }
 
 .f-1 {
-    padding: 20px 10px 0px 0px;
+    padding: 20px 10px 30px 0px;
 }
 
 .f-2 {
-    padding: 20px 0px 0px 50px;
+    padding: 20px 0px 30px 50px;
 }
 
 .form-sec {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 0px 20px 0px;
 }
 
 .content {
@@ -87,10 +99,26 @@ h3 {
     justify-content: flex-start;
     flex: 1 0;
     padding-left: 6%;
+    
 }
 
 .foot {
-    background-color: rgb(245, 246, 248);
+    background-color: rgb(249, 249, 249);
     flex: 1;
     padding: 50px 10px 0px 6%;
+    box-shadow: 0 10px 10px -10px grey inset;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #688150;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 4px grey;
 }
