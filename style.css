@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.side1 {
+    background-image: url('./images/sidesplash.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw;
+}
+
+
+.side2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+    border: solid .1px rgb(38, 38, 38);
+}
+
+.side2 input[type='text'],.side2 input[type='email'],
+.side2 input[type='tel'], .side2 input[type='password'] {
+    width: 350px;
+    height: 25px;
+    border:2px solid rgb(234, 234, 236);
+    border-radius: 5px;
+    background-color: rgb(253, 253, 253);
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(38, 38, 38);
+}
+
+.head {
+    background-color: rgb(245, 246, 248);
+    flex: .5;
+    padding: 170px 40px 0px 6%;
+    
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex: 1 0 200px;
+}
+
+h3 {
+    font-size: 28px;
+    padding-left: 6%;
+    color: rgb(38, 38, 38);
+
+}
+
+.f-1 {
+    padding: 20px 10px 0px 0px;
+}
+
+.f-2 {
+    padding: 20px 0px 0px 50px;
+}
+
+.form-sec {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1 0;
+    padding-left: 6%;
+}
+
+.foot {
+    background-color: rgb(245, 246, 248);
+    flex: 1;
+    padding: 50px 10px 0px 6%;
+}
