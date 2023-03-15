@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "nature";
+    src: url(fonts/webfontkit-20230306-204107/naturebeautypersonaluse-9y2dk-webfont.woff)
+    format("woff");
+}
+
+@font-face {
+    font-family: "norse";
+    src: url(fonts/webfontkit-20230314-210904/norse-bold_1-webfont.woff) format("woff");
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -20,8 +31,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     width: 40vw;
+    border: solid .1px rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.odin {
+    height: 160px;
+    width: 140px;
+}
 
 .side2 {
     display: flex;
@@ -29,6 +48,28 @@ body {
     height: 100vh;
     width: 60vw;
     border: solid .1px rgb(38, 38, 38);
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.466);
+    font-family: "nature";
+    font-size: 45px;
+    color: white;
+}
+
+.overlay-top {
+    font-family: "norse";
+    font-size: 60px;
+    margin-bottom: -50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .side2 input[type='text'],.side2 input[type='email'],
@@ -59,9 +100,10 @@ label {
 }
 
 .head {
+    font-size: 24px;
     background-color: rgb(249, 249, 249);
     flex: .5;
-    padding: 170px 40px 0px 6%;
+    padding: 170px 40px 0px 7%;
     
 }
 
@@ -74,7 +116,7 @@ form {
 
 h3 {
     font-size: 28px;
-    padding-left: 6%;
+    padding-left: 7%;
     color: rgb(38, 38, 38);
 
 }
@@ -98,15 +140,27 @@ h3 {
     flex-direction: row;
     justify-content: flex-start;
     flex: 1 0;
-    padding-left: 6%;
+    padding-left: 7%;
     
 }
 
 .foot {
     background-color: rgb(249, 249, 249);
     flex: 1;
-    padding: 50px 10px 0px 6%;
+    padding: 50px 10px 0px 7%;
     box-shadow: 0 10px 10px -10px grey inset;
+}
+
+.footer {
+    align-self: center;
+    justify-self: center;
+    font-size: 15px;
+    color: white;
+}
+
+.footer a {
+    color: white;
+    text-decoration: underline;
 }
 
 button {
@@ -121,4 +175,19 @@ button {
     border-radius: 6px;
     margin-bottom: 30px;
     box-shadow: 1px 1px 4px grey;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #596e44;
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 4px grey;
+}
+a {
+    color: #688150;
+    text-decoration-line: none;
 }
