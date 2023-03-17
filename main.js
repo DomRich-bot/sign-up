@@ -1,9 +1,22 @@
-document.addEventListener("DOMContentLoaded",function(){
-    let password = document.querySelector("#password").value;
-    let confirmPass = document.querySelector("#confirm").value;
-    let error = document.querySelector("error");
+const password = document.getElementById("password");
+const confirmPass = document.getElementById("confirm");
+const error = document.getElementById("error");
+const form = document.getElementById("form");
+const input = document.querySelectorAll("input")
 
-    if(password != confirmPass) {
-        error.innerText = 'Passwords do not match';
+form.addEventListener('submit', e => {
+    if (password.value != confirmPass.value) {
+        e.preventDefault();
+        error.innerText = '*Passwords do not match'
+    } else {
+        error.innerText = ''
     }
-})
+
+    if (!form.checkValidity()) {
+        e.preventDefault();
+        input.classList.add('invalid')
+    } else {
+        input.classList.remove('invalid')
+    }
+});
+

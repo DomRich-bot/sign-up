@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <script defer src="main.js"></script>
     <title>Sign Up Now</title>
 </head>
 <body>
@@ -22,32 +22,29 @@
         <div class="side2">
             <div class="head">
                 <h4 class="random">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore tenetur,
-                    ullam iure accusamus possimus eveniet rerum veritatis labore voluptatibus eligendi neque quam
-                    repellendus excepturi autem perspiciatis cupiditate expedita. Iure.
-                    orem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore tenetur,
-                    ullam iure accusamus possimus eveniet rerum veritatis labore voluptatibus eligendi neque quam.
+                    This is not a real online service! You know you need something like this in your life to 
+                    help you realize your deepest dreams. Sign up now to get started.
                     Sign up <em>Now</em> to get started.
                 </h4>
                 <h4>You <em>know</em> you want to!</h4>
             </div>
 
-            <form action="" method="">
+            <form id="form" action="#" method="post">
                 <h3>Let's do this!</h3> 
                 <div class="content">     
 
                     <div class="f-1">
                         <div class="form-sec">
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required>
                         </div>
                         <div class="form-sec">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="form-sec">
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                             <p id="error"></p>
                         </div>
                     </div>
@@ -55,21 +52,21 @@
                     <div class="f-2">
                         <div class="form-sec">
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" name="last-name" id="last-name">
+                            <input type="text" name="last-name" id="last-name" required>
                         </div>
                         <div class="form-sec">
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone" required>
                         </div>
                         <div class="form-sec">
                             <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="password" name="password" id="confirm">
+                            <input type="password" name="confirm" id="confirm" required>
                         </div>
                     </div>
 
                 </div>
                 <div class="foot">
-                    <button type="submit">Create Account</button>
+                    <button id="submit" type="submit">Create Account</button>
                     <div class="log">Already have an account? <a href="">Log In</a></div>
                 </div>
             </form>
